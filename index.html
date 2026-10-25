@@ -111,10 +111,11 @@
       <p class="hint">Formulář otevře váš e-mailový program. Výkres připojte jako přílohu.</p>
     </form>
   </div>
-  <div class="map rv"><iframe title="Mapa" loading="lazy" referrerpolicy="no-referrer" src="https://www.openstreetmap.org/export/embed.html?bbox=12.9300%2C49.5200%2C12.9700%2C49.5360&amp;layer=mapnik&amp;marker=49.52815%2C12.94970"></iframe></div>
+  <div class="map rv"><div class="map-ph"><p>Mapa se načte až po vašem souhlasu</p><button type="button" class="btn primary" data-cc-open>Zobrazit mapu</button></div><iframe title="Mapa" hidden loading="lazy" referrerpolicy="no-referrer" data-src="https://www.openstreetmap.org/export/embed.html?bbox=12.9300%2C49.5200%2C12.9700%2C49.5360&amp;layer=mapnik&amp;marker=49.52815%2C12.94970"></iframe></div>
 </div></section>
 </main>
-<footer><div class="wrap"><span>© 2010–2026 HT Metal s.r.o. · Polní 124, Horšovský Týn · Všechna práva vyhrazena.</span><span><a href="mailto:htmetal@seznam.cz">htmetal@seznam.cz</a></span><span class="made">Vytvořil <a href="https://pckucera.cz" target="_blank" rel="noopener">pckucera.cz</a></span></div></footer>
+<footer><div class="wrap"><span>© 2010–2026 HT Metal s.r.o. · Polní 124, Horšovský Týn · Všechna práva vyhrazena.</span><span><a href="mailto:htmetal@seznam.cz">htmetal@seznam.cz</a></span><span><button type="button" class="cc-link" data-cc-open>Nastavení cookies</button></span><span class="made">Vytvořil <a href="https://pckucera.cz" target="_blank" rel="noopener">pckucera.cz</a></span></div></footer>
+<div id="cc" class="cc" role="dialog" aria-live="polite" aria-label="Cookies" hidden><p>Web používá jen jednu externí službu: mapu OpenStreetMap. Ta se načte až po vašem souhlasu a může ukládat cookies. Jinak nepoužíváme žádnou analytiku ani reklamu.</p><div class="cc-b"><button type="button" class="btn ghost" data-cc="no">Odmítnout</button><button type="button" class="btn primary" data-cc="yes">Přijmout</button></div></div>
 <div class="mbar"><a href="tel:+420775021111">Zavolat</a><a class="p" href="#kontakt">Poptávka</a></div>
 <script src="assets/app.js" defer></script>
 </body>
