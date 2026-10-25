@@ -111,10 +111,11 @@
       <p class="hint">Das Formular öffnet Ihr E-Mail-Programm. Zeichnung bitte als Anhang beifügen.</p>
     </form>
   </div>
-  <div class="map rv"><iframe title="Karte" loading="lazy" referrerpolicy="no-referrer" src="https://www.openstreetmap.org/export/embed.html?bbox=12.9300%2C49.5200%2C12.9700%2C49.5360&amp;layer=mapnik&amp;marker=49.52815%2C12.94970"></iframe></div>
+  <div class="map rv"><div class="map-ph"><p>Die Karte wird erst nach Ihrer Zustimmung geladen</p><button type="button" class="btn primary" data-cc-open>Karte anzeigen</button></div><iframe title="Karte" hidden loading="lazy" referrerpolicy="no-referrer" data-src="https://www.openstreetmap.org/export/embed.html?bbox=12.9300%2C49.5200%2C12.9700%2C49.5360&amp;layer=mapnik&amp;marker=49.52815%2C12.94970"></iframe></div>
 </div></section>
 </main>
-<footer><div class="wrap"><span>© 2010–2026 HT Metal s.r.o. · Polní 124, Horšovský Týn · Alle Rechte vorbehalten.</span><span><a href="mailto:htmetal@seznam.cz">htmetal@seznam.cz</a></span><span class="made">Erstellt von <a href="https://pckucera.cz" target="_blank" rel="noopener">pckucera.cz</a></span></div></footer>
+<footer><div class="wrap"><span>© 2010–2026 HT Metal s.r.o. · Polní 124, Horšovský Týn · Alle Rechte vorbehalten.</span><span><a href="mailto:htmetal@seznam.cz">htmetal@seznam.cz</a></span><span><button type="button" class="cc-link" data-cc-open>Cookie-Einstellungen</button></span><span class="made">Erstellt von <a href="https://pckucera.cz" target="_blank" rel="noopener">pckucera.cz</a></span></div></footer>
+<div id="cc" class="cc" role="dialog" aria-live="polite" aria-label="Cookies" hidden><p>Diese Website nutzt nur einen externen Dienst: die OpenStreetMap-Karte. Sie wird erst nach Ihrer Zustimmung geladen und kann Cookies setzen. Analyse- oder Werbedienste setzen wir nicht ein.</p><div class="cc-b"><button type="button" class="btn ghost" data-cc="no">Ablehnen</button><button type="button" class="btn primary" data-cc="yes">Akzeptieren</button></div></div>
 <div class="mbar"><a href="tel:+420775021111">Anrufen</a><a class="p" href="#kontakt">Anfrage</a></div>
 <script src="../assets/app.js" defer></script>
 </body>
