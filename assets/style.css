@@ -79,14 +79,14 @@ h1, h2, h3 { font-family: var(--sans); margin: 0; color: var(--ink); font-weight
 .burger span::after { top: 7px; left: 0; right: 0; }
 
 /* ---------- úvod ---------- */
-.hero { padding: clamp(48px, 6vw, 88px) 0 0; background: var(--sheet); }
+.hero { padding: clamp(24px, 3vw, 44px) 0 0; background: var(--sheet); }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(36px, 6vw, 96px); align-items: center; }
 .hero-grid > * { min-width: 0; }
-.hero h1 { font-size: clamp(2.7rem, 5.2vw, 5rem); line-height: 1.02; letter-spacing: -.04em; font-weight: 600; margin-bottom: 26px; }
+.hero h1 { font-size: clamp(2.6rem, 4.4vw, 4.2rem); line-height: 1.04; letter-spacing: -.04em; font-weight: 600; margin-bottom: 20px; }
 .hero h1 em { font-style: normal; }
-.lead { font-size: clamp(1.15rem, 1.6vw, 1.3rem); line-height: 1.55; max-width: 48ch; color: var(--text); margin-bottom: 32px; }
+.lead { font-size: clamp(1.15rem, 1.6vw, 1.3rem); line-height: 1.55; max-width: 48ch; color: var(--text); margin-bottom: 26px; }
 .hero-media { position: relative; }
-.hero-media figure { position: relative; margin: 0; aspect-ratio: 4 / 3; overflow: hidden; background: var(--navy); border-radius: var(--r-lg) var(--r-lg) 0 0; }
+.hero-media figure { position: relative; margin: 0; aspect-ratio: 16 / 10; overflow: hidden; background: var(--navy); border-radius: var(--r-lg) var(--r-lg) 0 0; }
 .hero-media figure img { width: 100%; height: 100%; object-fit: cover; }
 .hero-media figure::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,27,43,.5), rgba(11,27,43,0) 38%, rgba(11,27,43,.18)); pointer-events: none; }
 .hero-media figcaption { position: absolute; z-index: 4; left: 16px; bottom: 16px; background: rgba(11,27,43,.82); color: #fff; font-weight: 500; font-size: 15px; padding: 7px 14px; border-radius: 8px; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
@@ -106,7 +106,7 @@ h1, h2, h3 { font-family: var(--sans); margin: 0; color: var(--ink); font-weight
 .dro dt { color: var(--accent-lt); font-weight: 600; font-size: 16px; }
 .dro dd { margin: 0; text-align: right; font-size: 22px; font-weight: 500; font-variant-numeric: tabular-nums; min-width: 6.5ch; }
 
-.facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: clamp(48px, 6vw, 84px); padding-bottom: clamp(48px, 6vw, 84px); }
+.facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: clamp(24px, 3vw, 40px); padding-bottom: clamp(48px, 6vw, 84px); }
 .fact { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 22px 24px; display: flex; flex-direction: column; gap: 4px; }
 .fact b { font-size: clamp(1.7rem, 2.6vw, 2.3rem); font-weight: 600; letter-spacing: -.035em; line-height: 1.1; color: var(--ink); }
 .fact span { font-size: 16px; color: var(--steel); line-height: 1.4; }
