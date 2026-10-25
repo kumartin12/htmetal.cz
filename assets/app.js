@@ -112,3 +112,29 @@
   };
   addEventListener('scroll', upd, { passive: true }); upd();
 })();
+
+// ===== cookie consent (jen mapa OpenStreetMap) =====
+(() => {
+  const KEY = 'htm-cc';
+  const bar = document.getElementById('cc');
+  const get = () => { try { return localStorage.getItem(KEY); } catch { return null; } };
+  const set = v => { try { localStorage.setItem(KEY, v); } catch {} };
+  const apply = () => {
+    const ok = get() === 'yes';
+    document.querySelectorAll('.map').forEach(m => {
+      const f = m.querySelector('iframe');
+      if (!f) return;
+      if (ok) { if (!f.src) f.src = f.dataset.src; f.hidden = false; }
+      else { f.removeAttribute('src'); f.hidden = true; }
+      m.classList.toggle('on', ok);
+    });
+  };
+  const choose = v => { set(v); bar.hidden = true; apply(); };
+  bar?.querySelectorAll('[data-cc]').forEach(b => b.addEventListener('click', () => choose(b.dataset.cc)));
+  document.querySelectorAll('[data-cc-open]').forEach(b => b.addEventListener('click', () => {
+    // tlačítko v mapě = souhlas, odkaz v patičce = znovu otevřít lištu
+    if (b.closest('.map')) choose('yes'); else bar.hidden = false;
+  }));
+  if (!get()) bar.hidden = false;
+  apply();
+})();
