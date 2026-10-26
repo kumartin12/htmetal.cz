@@ -138,3 +138,14 @@
   if (!get()) bar.hidden = false;
   apply();
 })();
+
+
+// ===== language switcher =====
+(() => {
+  const sw = document.querySelector('.langsw'); if (!sw) return;
+  const btn = sw.querySelector('.lang-btn');
+  const set = o => { sw.classList.toggle('open', o); btn.setAttribute('aria-expanded', o); };
+  btn.addEventListener('click', e => { e.stopPropagation(); set(!sw.classList.contains('open')); });
+  document.addEventListener('click', e => { if (!sw.contains(e.target)) set(false); });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && sw.classList.contains('open')) { set(false); btn.focus(); } });
+})();
