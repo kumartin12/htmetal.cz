@@ -163,6 +163,8 @@ section.dark h2, section.dark h3 { color: #fff; }
 .stat-card p { margin: 0; font-size: 1.12rem; font-weight: 500; color: var(--ink); line-height: 1.45; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .tags span { background: var(--paper); border: 1px solid var(--line); font-weight: 600; font-size: 14px; padding: 4px 12px; border-radius: 999px; color: var(--ink); }
+.tags-lg { margin-top: 10px; gap: 10px; }
+.tags-lg span { font-size: 1.12rem; padding: 9px 18px; background: var(--accent); border-color: var(--accent); color: #fff; }
 
 /* služby */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
