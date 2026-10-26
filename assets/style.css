@@ -95,6 +95,8 @@ h1, h2, h3 { font-family: var(--sans); margin: 0; color: var(--ink); font-weight
 .hero-grid > * { min-width: 0; }
 .hero h1 { font-size: clamp(2.6rem, 4.4vw, 4.2rem); line-height: 1.04; letter-spacing: -.04em; font-weight: 600; margin-bottom: 20px; }
 .hero h1 em { font-style: normal; }
+.hero h1 .br2 { display: none; }
+@media (min-width: 1081px) { html[lang="cs"] .hero h1 { font-size: clamp(2rem, 4vw, 3.25rem); } html[lang="cs"] .hero h1 .br2 { display: inline; } html[lang="cs"] .hero h1 em { white-space: nowrap; } }
 .lead { font-size: clamp(1.15rem, 1.6vw, 1.3rem); line-height: 1.55; max-width: 48ch; color: var(--text); margin-bottom: 26px; }
 .hero-media { position: relative; }
 .hero-media figure { position: relative; margin: 0; aspect-ratio: 16 / 10; overflow: hidden; background: var(--navy); border-radius: var(--r-lg) var(--r-lg) 0 0; }
